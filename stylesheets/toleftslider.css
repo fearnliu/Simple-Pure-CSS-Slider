@@ -1,0 +1,45 @@
+
+.slider-container {
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 0 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider-image-container {
+    width: 2400px;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    animation-name: slider;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+.slider-image-container .slider-image {
+    width: 800px;
+    height: 400px;
+        float: left;
+    position: relative;
+}
+
+@keyframes slider {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-800px, 0);
+    }
+    100% {
+        transform: translate(-1600px, 0);
+    }
+}
